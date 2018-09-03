@@ -1,0 +1,50 @@
+[
+	{
+		"answer": "にわとり",
+		"soundUrl": "https://www.dl.dropboxusercontent.com/s/x4ts6341ffxbqkn/chicken-cry1.mp3?dl=0",
+		"imageUrl": "https://www.dl.dropboxusercontent.com/s/6djihyir383buqi/31029281866_2c610965c2_q.jpg?dl=0",
+		"wikiUrl": "https://ja.wikipedia.org/wiki/%E3%83%8B%E3%83%AF%E3%83%88%E3%83%AA"
+	},
+	{
+		"answer": "さる",
+		"soundUrl": "https://www.dl.dropboxusercontent.com/s/28sdu9zs0krn5mi/japanese-monkey-cry-1.mp3?dl=0",
+		"imageUrl": "https://www.dl.dropboxusercontent.com/s/gngsguv3nhpbewi/14086640153_42d66f1707_q.jpg?dl=0",
+		"wikiUrl": "https://ja.wikipedia.org/wiki/%E3%82%B5%E3%83%AB"
+	},
+	{
+		"answer": "らいおん",
+		"soundUrl": "https://www.dl.dropboxusercontent.com/s/hsm2bgzbq54kd3g/lion1.mp3?dl=0",
+		"imageUrl": "https://www.dl.dropboxusercontent.com/s/mgy1uh974u847lx/18576284415_fba4763805_q.jpg?dl=0",
+		"wikiUrl": "https://ja.wikipedia.org/wiki/%E3%83%A9%E3%82%A4%E3%82%AA%E3%83%B3"
+	},
+	{
+		"answer": "うし",
+		"soundUrl": "https://www.dl.dropboxusercontent.com/s/wuvrfovt87jxqct/holstein-cow-mooing-1.mp3?dl=0",
+		"imageUrl": "https://www.dl.dropboxusercontent.com/s/gmbqkxzyz0rn8n0/8950598837_e89c768a0d_q.jpg?dl=0",
+		"wikiUrl": "https://ja.wikipedia.org/wiki/%E3%82%A6%E3%82%B7"
+	},
+	{
+		"answer": "ひつじ",
+		"soundUrl": "https://www.dl.dropboxusercontent.com/s/5bjwvnuec7bv9d9/sheep-cry1.mp3?dl=0",
+		"imageUrl": "https://www.dl.dropboxusercontent.com/s/6ercvadx7y256y7/37872984835_23bfe5e164_q.jpg?dl=0",
+		"wikiUrl": "https://ja.wikipedia.org/wiki/%E3%83%92%E3%83%84%E3%82%B8"
+	},
+	{
+		"answer": "やぎ",
+		"soundUrl": "https://www.dl.dropboxusercontent.com/s/14pt6ooiqfek6bl/goat-cry1.mp3?dl=0",
+		"imageUrl": "https://www.dl.dropboxusercontent.com/s/klywgb1gd93n1we/3519630834_6ecc84cd01_q.jpg?dl=0",
+		"wikiUrl": "https://ja.wikipedia.org/wiki/%E3%83%A4%E3%82%AE"
+	},
+	{
+		"answer": "ぶた",
+		"soundUrl": "https://www.dl.dropboxusercontent.com/s/tmmp9g4r6fx64p1/pig-oinking-2.mp3?dl=0",
+		"imageUrl": "https://www.dl.dropboxusercontent.com/s/m6tcfobue6xfba1/16546999795_4691fd919b_q.jpg?dl=0",
+		"wikiUrl": "https://ja.wikipedia.org/wiki/%E3%83%96%E3%82%BF"
+	},
+	{
+		"answer": "ぞう",
+		"soundUrl": "https://www.dl.dropboxusercontent.com/s/dkk1yw9u8gptak4/elephant1.mp3?dl=0",
+		"imageUrl": "https://www.dl.dropboxusercontent.com/s/li5oiuitejky25j/11549274826_6c76c5d23d_q.jpg?dl=0",
+		"wikiUrl": "https://ja.wikipedia.org/wiki/%E3%82%BE%E3%82%A6"
+	}
+]
