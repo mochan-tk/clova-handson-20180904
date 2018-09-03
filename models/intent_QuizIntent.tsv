@@ -1,0 +1,6 @@
+[INTENT SLOT]
+animal	animal
+
+[INTENT EXPRESSION]
+<animal>らいおん</animal>
+
