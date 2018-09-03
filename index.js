@@ -1,5 +1,5 @@
 const clova = require('@line/clova-cek-sdk-nodejs');
-const line = require('@line/bot-sdk');
+//const line = require('@line/bot-sdk');
 const express = require('express');
 const jsonData = require('./data.json');
 require('dotenv').config();
@@ -7,10 +7,12 @@ require('dotenv').config();
 const MAX_QUESTION = 5;
 const msg = '動物を答えてください。';
 
+/*
 const client = new line.Client({
     channelAccessToken: process.env.CHANNEL_ACCESS_TOKEN,
     channelSecret: process.env.CHANNEL_SECRET
 });
+*/
 
 const clovaSkillHandler = clova.Client
   .configureSkill()
@@ -77,7 +79,7 @@ const clovaSkillHandler = clova.Client
         // LINE BOT送信
         speechArray.push(clova.SpeechBuilder.createSpeechText(`動物鳴き声クイズボットから、${jsonData[currentQuestion]["answer"]}の詳細情報を送信します。`));
         const { userId } = responseHelper.getUser();
-        sendLineBot(userId, currentQuestion);
+        //sendLineBot(userId, currentQuestion);
     
         // 値保持
         responseHelper.setSessionAttributes({
@@ -150,55 +152,13 @@ function getQuestionSpeechList(questionNo){
   return arr;
 }  
 
+/*
+// Flex Message に置き換えてみよう！
 function sendLineBot(userId, questionNo){
   client.pushMessage(userId, [
     {
-            type: 'flex',
-            altText: '正解の動物を送信しました',
-            contents:
-            {
-                "type": "bubble",
-                "hero": {
-                    "type": "image",
-                    "url": jsonData[questionNo]["imageUrl"],
-                    "size": "full",
-                    "aspectRatio": "20:13",
-                    "aspectMode": "cover",
-                    "action": {
-                        "type": "uri",
-                        "uri": jsonData[questionNo]["imageUrl"]
-                    }
-                },
-                "body": {
-                    "type": "box",
-                    "layout": "vertical",
-                    "spacing": "md",
-                    "contents": [
-                        {
-                            "type": "text",
-                            "text": jsonData[questionNo]["answer"],
-                            "size": "xl",
-                            "weight": "bold"
-                        }
-                    ]
-                },
-                "footer": {
-                    "type": "box",
-                    "layout": "vertical",
-                    "contents": [
-                        {
-                            "type": "button",
-                            "style": "primary",
-                            "color": "#905c44",
-                            "action": {
-                                "type": "uri",
-                                "label": "詳細を見る",
-                                "uri": jsonData[questionNo]["wikiUrl"]
-                            }
-                        }
-                    ]
-                }
-            }
+        "type":"text",
+        "text":"Hello, world"
         }
   ]).then(() => {
     console.log('LINE Success')
@@ -207,7 +167,7 @@ function sendLineBot(userId, questionNo){
     //console.log(err)
   })
 }
-
+*/
 
 const app = new express();
 const port = process.env.PORT || 3000;
