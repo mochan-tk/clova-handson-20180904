@@ -50,7 +50,7 @@ const clovaSkillHandler = clova.Client
       case 'QuizIntent':
         const slots = responseHelper.getSlots();
         console.log(slots);
-        var currentQuestion = parseInt(reqSessionAttributes.question);
+        var currentQuestion = parseInt(reqSessionAttributes.question) || 0;
         var nextQuestion = parseInt(currentQuestion) + 1;
         var correct = parseInt(reqSessionAttributes.correct);
         var incorrect = parseInt(reqSessionAttributes.incorrect);
@@ -210,7 +210,7 @@ function sendLineBot(userId, questionNo){
 
 
 const app = new express();
-const port = process.env.PORT || 3000;
+const port = process.env.SERVER_PORT || 3000;
 
 const clovaMiddleware = clova.Middleware({ applicationId: process.env.EXTENSION_ID });
 app.post('/clova', clovaMiddleware, clovaSkillHandler);
