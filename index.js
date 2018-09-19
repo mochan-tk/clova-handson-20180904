@@ -210,7 +210,7 @@ function sendLineBot(userId, questionNo){
 
 
 const app = new express();
-const port = process.env.SERVER_PORT || 3000;
+const port = process.env.PORT || 3000;
 
 const clovaMiddleware = clova.Middleware({ applicationId: process.env.EXTENSION_ID });
 app.post('/clova', clovaMiddleware, clovaSkillHandler);
