@@ -1,19 +1,61 @@
 {
-  "name": "clova-gameAnimalSound",
+  "name": "clova-game-animal-sound",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "private": true,
+  "main": "app.js",
+  "files": [
+    "dist"
+  ],
+  "license": "ISC",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "build": "tsc -p tsconfig.json",
+    "lint": "tslint -p tsconfig.json -c tslint.json",
+    "test": "jest"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "transform": {
+      "^.+\\.(ts|tsx)$": "ts-jest"
+    },
+    "globals": {
+      "ts-jest": {
+        "tsConfig": "tsconfig.json"
+      }
+    },
+    "testMatch": [
+      "**/__tests__/*.+(ts|tsx|js)"
+    ]
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
   "dependencies": {
     "@line/bot-sdk": "^6.2.1",
     "@line/clova-cek-sdk-nodejs": "^1.1.0",
+    "@types/dotenv": "^4.0.3",
+    "@types/supertest": "^2.0.6",
     "body-parser": "^1.18.3",
     "dotenv": "^6.0.0",
-    "express": "^4.16.3"
+    "express": "^4.16.3",
+    "tslib": "^1.9.3"
+  },
+  "devDependencies": {
+    "@types/express": "^4.16.0",
+    "@types/jest": "^23.3.2",
+    "@types/node": "^10.9.4",
+    "jest": "^23.6.0",
+    "json-loader": "^0.5.7",
+    "supertest": "3.0.0",
+    "ts-jest": "^23.1.4",
+    "tslint": "^5.11.0",
+    "tslint-config-airbnb": "^5.11.0",
+    "tsutils": "^3.0.0",
+    "typescript": "^3.0.3",
+    "unit.js": "2.0.0"
   }
 }
