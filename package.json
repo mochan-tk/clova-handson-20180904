@@ -1,10 +1,11 @@
 {
-  "name": "clova-gameAnimalSound",
+  "name": "clova-game-animal-sound",
   "version": "1.0.0",
+  "private": true,
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --recursive tests"
   },
   "keywords": [],
   "author": "",
@@ -13,7 +14,12 @@
     "@line/bot-sdk": "^6.2.1",
     "@line/clova-cek-sdk-nodejs": "^1.1.0",
     "body-parser": "^1.18.3",
-    "dotenv": "^6.0.0",
-    "express": "^4.16.3"
+    "express": "^4.16.3",
+    "aws-serverless-express": "3.1.3"
+  },
+  "devDependencies": {
+    "mocha": "5.0.0",
+    "unit.js": "2.0.0",
+    "supertest": "3.0.0"
   }
 }
