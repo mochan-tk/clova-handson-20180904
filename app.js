@@ -7,12 +7,10 @@ const jsonData = require('./data.json');
 const MAX_QUESTION = 5;
 const msg = '動物を答えてください。';
 
-/*
 const client = new line.Client({
     channelAccessToken: process.env.CHANNEL_ACCESS_TOKEN || '<your-access-token>',
     channelSecret: process.env.CHANNEL_SECRET || '<your-channel-secret>'
 });
-*/
 
 const clovaSkillHandler = clova.Client
   .configureSkill()
@@ -80,7 +78,7 @@ const clovaSkillHandler = clova.Client
         speechArray.push(clova.SpeechBuilder.createSpeechText(`動物鳴き声クイズボットから、${jsonData[currentQuestion]["answer"]}の詳細情報を送信します。`));
         console.log('pre get user');
         const { userId } = responseHelper.getUser();
-        //await sendLineBot(userId, currentQuestion);
+        await sendLineBot(userId, currentQuestion);
 
         // 値保持
         responseHelper.setSessionAttributes({
@@ -152,7 +150,7 @@ function getQuestionSpeechList(questionNo){
   
   return arr;
 }  
-/*
+
 async function sendLineBot(userId, questionNo){
   await client.pushMessage(userId, [
     {
@@ -212,7 +210,7 @@ async function sendLineBot(userId, questionNo){
     console.log(err)
   })
 }
-*/
+
 const app = express();
 
 const clovaMiddleware = clova.Middleware({ applicationId: process.env.EXTENSION_ID });
